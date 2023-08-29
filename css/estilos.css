@@ -28,3 +28,43 @@ box-shadow: black 0px 0px 5px;
 padding: 16px;
 border-radius: 8px;
 }
+
+h2{
+    font-size: 20px;
+    border-bottom: solid 5px;
+    border-left: dashed 5px;
+    padding-left: 10px;
+    
+}
+
+
+/* Grupo de seletores */
+h3,p,figcaption{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3{
+    background: linear-gradient(
+        60deg,
+        #ff8800,
+        #1ce41c
+        );
+}
+
+.destaque{
+    background-color: #ff8800;
+    padding: 4px;
+    color:#1ce41c;
+    border-radius: 5px;
+}
+
+
+/* Reset/limpeza de espaços */
+
+figure{
+    margin:0;
+    text-align: center;
+
+}
+/* Tornando as imagens "responsivas" */
+img{ max-width: 100%; }
