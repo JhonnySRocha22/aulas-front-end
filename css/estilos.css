@@ -68,3 +68,7 @@ figure{
 }
 /* Tornando as imagens "responsivas" */
 img{ max-width: 100%; }
+
+/* Seletor Descendente */
+
+p a{color: red;}
