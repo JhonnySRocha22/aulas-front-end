@@ -168,6 +168,22 @@ transform: scale(100%);
 
 
 
+/* Pseudo Classe:
+:first-child
+:last-child
+:nth-child() */
+
+
+
+li:first-child{ color: blue; }
+li:last-child{ color: darkmagenta ; }
+li:nth-child(3){ color: orange; }
+
+
+
+
+
+
 
 
 
