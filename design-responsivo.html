@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Responsivo</title>
+
+<style>
+
+/* Etapa 01: regras de uso geral, ou seja, regras que vão definir estilos como um todo, não importando muito o tamanho de tela ou tipo de dispositivo. */
+*{ box-sizing: border-box; }
+
+body{ 
+    font-family: "Segoe UI";
+    background-color:gold;
+}
+
+h1{ color: darkblue;}
+
+hr{ 
+    border: none;
+    height: 3px;
+    background-color: blue;
+}
+
+b {
+    background-color: white;
+    padding: 2px;
+    border-radius: 4px;
+    
+}
+
+
+
+/* Etapa 02: regras de uso condicional, ou seja, regras que serão aplicadas de acordo com determinadas situações (exemplo: regras que somente funcionarão se o site estiver em uma tela maior que 1000px.). 
+
+Estas regras especiais/condicionais são conhecidas como
+"Media Queries" */
+
+@media screen and (min-width: 550px) {
+    body {background-color: darkorchid;} 
+    h1 {text-align: center;}
+    hr { width: 30%; }
+
+}
+
+@media screen and (min-width: 720px) {
+    div{
+    width: 75%;
+    margin: auto;
+    }
+    
+    b{ background-color: chocolate; }
+
+    p{ font-size: 18px; }
+}
+
+@media screen and (min-width:895px) {
+
+    h1{ background: linear-gradient(to left, red, green ); }
+
+    .exemplo{ background-color: rgba(255, 145, 0, 0.486); }
+   
+}
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+    <div class="exemplo">
+    <h1>Design Responsivo (ou Responsividade)</h1>
+    <hr>
+    <p>Conjunto de técnicas de desenvolvimento front-end visando a construção de sites que funcionem corretamente em dipositivos com telas de tamanhos variados.</p>
+
+<p>Existem 2 abordagens de desenvolvimento responsivo: <b>Mobile First</b> e <b>Desktop First</b>.</p>
+
+<p> A mais usada é a <b>Mobile First</b>.</p>
+
+
+
+    </div>
+</body>
+</html>
