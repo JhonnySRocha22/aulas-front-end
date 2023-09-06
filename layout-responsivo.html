@@ -4,6 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Responsivo</title>
+<style>
+/* Regras de uso geral */
+    * { box-sizing: border-box; }
+
+    body {  
+        font-family: Verdana;
+        background-color: rgba(127, 255, 212, 0.815);
+    }
+
+    .container {
+        background-color: rgba(0, 255, 255, 0.459);
+        box-shadow: black 0 0 5px;
+        padding: 5px;
+    }
+
+    /* CSS Reset (em alguns elementos) */
+    h1, h2, p {
+        margin: 0;
+        padding: 0;
+    }
+
+p { padding: 5px 0; }
+
+h1 { background-color: blueviolet; }
+
+nav { background-color: chartreuse; }
+
+article { padding: 8px; }
+
+#colunaA { background-color: crimson; }
+#colunaB { background-color: darkgoldenrod; }
+#colunaC { background-color: deeppink; }
+
+footer { 
+    background-color: darkgrey;
+    height: 100px;
+}
+
+
+/* Regras Condicionais (Media Queries) */
+@media screen and (min-width: 522px) {
+    header { 
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    h1 { width: 40% }
+    nav { 
+        width: 60%; 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 766px) {
+    #colunaA { width: 70%;}
+    #colunaB { width: 30%;}
+    #colunaC { width: 100%;}
+    
+    main { 
+        display:flex;
+
+        /* flex-wrap quando habilitado faz com que os elementos sejam "quebrados" para a linha de baixo caso não haja espaço */
+        flex-wrap: wrap; 
+        
+    }
+
+
+
+}
+
+@media screen and (min-width:880px) {
+   
+    header { height: 60px; }
+    
+    
+    main { 
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        /* gap: 16px; */
+     }
+
+    
+    #colunaA, #colunaB, #colunaC {width: 33%;}
+    
+     
+
+    .container { 
+        max-width: 880px;
+        margin: auto; 
+    }
+}
+
+</style>
+
 </head>
 <body>
     
