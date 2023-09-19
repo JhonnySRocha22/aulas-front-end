@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Variáveis no CSS</title>
+
+<style>
+/* Usamos o seletor pseudo-classe :root para declarar variáveis para uso em qualquer lugar */
+:root { 
+    /* Nome da variavel: valor da variável */
+    --cor: darkblue;
+    --fonte: verdana;
+ }
+
+h1 { color: var(--cor); }
+
+h2{ 
+    color: var(--cor);
+    font-family: var(--fonte);
+}
+
+p { 
+    color: var(--cor);
+    font-family: var(--fonte);
+
+}
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    
+<h1>Variáveis CSS</h1>
+<hr>
+<h2>Front-End</h2>
+
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia aperiam necessitatibus reprehenderit officiis maiores porro?</p>
+
+<h2>Back-End</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde magnam molestias, odio reiciendis officiis.</p>
+
+
+</body>
+</html>
